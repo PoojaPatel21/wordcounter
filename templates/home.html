@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Word Counter</title>
+</head>
+<body style="background-color:powderblue">
+
+<h1 align="Center" background-color= "Blue">Word Counter</h1>
+<h4 align="Center"> Enter some text in below box to count the number of words in it</h4>
+<form action="{% url 'count' %}">
+	<textarea cols="170" rows="20" name="entertext" align = "Center" color ="red"></textarea>
+	<br>
+	<h1><button type="submit" class="btn btn-info" value="count">Count</button></h1>
+	<!-- <input type="submit" value="Count" align="Center"> -->
+	
+</form>
+<footer>
+	<h2><button><a href="{% url 'about' %}" align ="Center" >About Me</a></button></h2>
+</footer>
+</body>
+</html>
